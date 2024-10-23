@@ -1,0 +1,14 @@
+[package]
+name = "meta"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["full"] }
+
+# Used for managing TLS because its easier to let this library do it
+# than spend hours (maybe days) trying to make it myself.
+tokio-rustls = { version = "0.26.0", default-features = false, features = ["ring"] }
+rustls = { version = "0.23.14", default-features = false }
+
+webpki-roots = "0.26.6"
