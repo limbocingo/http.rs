@@ -26,11 +26,11 @@
 pub mod header;
 pub mod tls;
 pub mod request;
-pub mod util;
+pub mod parser;
 
 pub use self::header::*;
 pub use self::tls::*;
-pub use self::util::*;
+pub use self::parser::*;
 
 /// All the methods that can be used when making a HTTP
 /// request to a server.
